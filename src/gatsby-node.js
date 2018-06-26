@@ -1,7 +1,7 @@
-exports.onCreateWebpackConfig = (
+export function onCreateWebpackConfig(
   { actions, stage, loaders, getConfig },
   { postcss: postcssOptions = {} } = {}
-) => {
+) {
   const isProduction = stage !== 'develop';
   const isSSR = stage.includes('html');
   const originalConfig = getConfig();
@@ -57,4 +57,4 @@ exports.onCreateWebpackConfig = (
   }
 
   actions.setWebpackConfig({ module: { rules } });
-};
+}

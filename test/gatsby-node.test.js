@@ -1,3 +1,5 @@
+import { onCreateWebpackConfig } from '../src/gatsby-node';
+
 describe('onCreateWebpackConfig', () => {
   const actions = {
     setWebpackConfig: jest.fn(),
@@ -21,7 +23,6 @@ describe('onCreateWebpackConfig', () => {
       ]
     }
   });
-  const { onCreateWebpackConfig } = require('../src/gatsby-node');
 
   beforeEach(() => {
     actions.setWebpackConfig.mockReset();
