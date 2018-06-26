@@ -21,7 +21,7 @@ describe('onCreateWebpackConfig', () => {
       ]
     }
   });
-  const { onCreateWebpackConfig } = require(`../gatsby-node`);
+  const { onCreateWebpackConfig } = require('../src/gatsby-node');
 
   beforeEach(() => {
     actions.setWebpackConfig.mockReset();
