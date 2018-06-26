@@ -14,9 +14,7 @@
     "test": "jest --color",
     "format": "prettier --write 'src/*.js' 'README.md'",
     "build": "babel src --out-dir ./ --source-maps",
-    "watch": "babel src --out-dir ./ --source-maps --watch",
-    "travis-deploy-once": "travis-deploy-once",
-    "semantic-release": "semantic-release"
+    "watch": "babel src --out-dir ./ --source-maps --watch"
   },
   "description": "Gatsby plugin to handle PostCSS",
   "main": "index.js",
