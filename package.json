@@ -1,0 +1,56 @@
+{
+  "name": "gatsby-plugin-postcss",
+  "files": [
+    "gatsby-*.js*"
+  ],
+  "keywords": [
+    "gatsby",
+    "gatsby-plugin",
+    "postcss"
+  ],
+  "scripts": {
+    "clean": "rm -rf gatsby-node.js*",
+    "lint": "eslint --ext js,md ./ --cache",
+    "test": "jest --color",
+    "format": "prettier --write 'src/*.js' 'README.md'",
+    "build": "babel src --out-dir ./ --source-maps",
+    "watch": "babel src --out-dir ./ --source-maps --watch",
+    "travis-deploy-once": "travis-deploy-once",
+    "semantic-release": "semantic-release"
+  },
+  "description": "Gatsby plugin to handle PostCSS",
+  "main": "index.js",
+  "author": "Marat Dreizin <marat.dreizin@gmail.com>",
+  "license": "MIT",
+  "homepage": "https://github.com/mdreizin/gatsby-plugin-postcss",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/mdreizin/gatsby-plugin-postcss.git"
+  },
+  "bugs": {
+    "url": "https://github.com/mdreizin/gatsby-plugin-postcss/issues"
+  },
+  "dependencies": {
+    "babel-runtime": "^6.26.0"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-eslint": "^8.2.5",
+    "babel-plugin-transform-object-rest-spread": "^6.26.0",
+    "babel-plugin-transform-runtime": "^6.23.0",
+    "babel-preset-env": "^1.7.0",
+    "eslint": "^5.0.1",
+    "eslint-plugin-babel": "^5.1.0",
+    "eslint-plugin-markdown": "^1.0.0-beta.6",
+    "jest": "^23.2.0",
+    "prettier": "^1.13.6",
+    "semantic-release": "^15.6.0",
+    "travis-deploy-once": "^5.0.0"
+  },
+  "peerDependencies": {
+    "gatsby": ">2.0.0-alpha"
+  },
+  "jest": {
+    "collectCoverage": true
+  }
+}

@@ -1,0 +1,8 @@
+# jest
+coverage/
+
+# gatsby
+gatsby-*
+!src/*
+!test/*
+!index.js
